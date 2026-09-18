@@ -1,0 +1,13 @@
+[
+  {
+    "id": "undergraduate-research-retrospective",
+    "title": "本科毕业设计复盘：项目推进中的方法与教训",
+    "category": "项目复盘",
+    "topic": "科研方法与成长",
+    "published": "2026-09-18",
+    "updated": "2026-09-18",
+    "summary": "从课题启动、实验推进到论文写作，回看本科毕设中暴露的问题与逐渐建立的工作方法。",
+    "body": "posts/undergraduate-research-retrospective.md",
+    "relatedProjects": ["boundary-recovery"]
+  }
+]

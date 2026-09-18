@@ -1,0 +1,29 @@
+{
+  "name": "Zhao Yan",
+  "chineseName": "赵岩",
+  "baseUrl": "https://uestczhaoyan-gif.github.io",
+  "intendedDomain": "zhaoyanphd.com",
+  "motto": "不委曲求全，不畏惧尝试；边做边想，与自己争；追求全面进步的人生。",
+  "research": "光芯片与光系统，AI for Optics",
+  "education": [
+    { "period": "2022–2026", "school": "电子科技大学", "degree": "光电信息科学与工程 · 本科" },
+    { "period": "2026–", "school": "电子科技大学", "degree": "光学工程 · 博士" }
+  ],
+  "honors": [
+    "三年度本科生校一等、二等奖学金",
+    "美国大学生数学建模竞赛 H奖",
+    "两年度全国大学生数学竞赛 四川省二等奖",
+    "康维雅奖学金",
+    "荣誉课程与荣誉研究奖项、荣誉学士学位"
+  ],
+  "purpose": "记录我的学习、研究与实践，也收集那些基于灵光一现而开始的小项目。希望通过持续写作和分享，让想法逐渐清晰，让探索留下痕迹；同时也希望能够帮助到来到这里的朋友们！",
+  "email": "1399167996@qq.com",
+  "github": "https://github.com/uestczhaoyan-gif",
+  "githubName": "Felix Yann",
+  "repository": "https://github.com/uestczhaoyan-gif/uestczhaoyan-gif.github.io",
+  "photo": null,
+  "featuredProjects": ["boundary-recovery", "polarization-imaging", "optics-scholar-hub"],
+  "featuredPosts": ["undergraduate-research-retrospective"],
+  "projectCategories": ["研究与实验", "工具与网站", "兴趣探索"],
+  "postCategories": ["学习笔记", "实践记录", "项目复盘", "思考随笔"]
+}

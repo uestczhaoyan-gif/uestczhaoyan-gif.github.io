@@ -1,0 +1,12 @@
+{
+  "name": "zhao-yan-personal-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node check.mjs",
+    "start": "node server.mjs"
+  }
+}
