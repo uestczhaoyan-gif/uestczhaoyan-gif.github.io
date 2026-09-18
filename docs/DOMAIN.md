@@ -2,6 +2,8 @@
 
 主域名为 https://zhaoyanphd.com/ ，初始发布地址为 https://uestczhaoyan-gif.github.io/ 。2026-09-18 已在阿里云配置下方解析，并在 GitHub Pages 设置主域名。以下保留配置步骤供日后维护。
 
+当前校验：GitHub 对根域名和 www 的 DNS 健康检查均为有效，HTTP 主页、博客、项目和 www 跳转已通过。HTTPS 证书仍处于 `new`（等待 GitHub 开始申请），尚未开启 Enforce HTTPS；证书就绪后须完成第 4 步，并复查 `/optics-scholar-hub/`。
+
 ## 顺序
 
 1. 可在 GitHub 个人 Settings → Pages 中进一步验证 `zhaoyanphd.com`，按页面给出的值在 DNS 服务添加 TXT 记录。账号级 TXT 验证尚未配置；验证码必须使用该账号实际生成的值。
