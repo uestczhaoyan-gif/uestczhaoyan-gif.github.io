@@ -2,7 +2,7 @@
 
 赵岩的个人网站，关注光芯片与光系统、AI for Optics，记录研究实践、项目与学习复盘。
 
-[访问主页](https://uestczhaoyan-gif.github.io/) · [GitHub](https://github.com/uestczhaoyan-gif)
+[访问主页](https://zhaoyanphd.com/) · [GitHub](https://github.com/uestczhaoyan-gif)
 
 页面参考 al-folio 的简洁学术主页视觉方向独立实现，并非 al-folio 主题安装版。项目和博客采用「首页 → 分类总览 → 详情」结构；经历与荣誉直接展示在首页。
 
@@ -36,7 +36,7 @@ node server.mjs
 
 仓库使用 GitHub Actions 构建、检查并部署 GitHub Pages。推送到 `main` 会触发发布；拉取请求只检查，不部署。Pages 的发布来源应设为 GitHub Actions。
 
-自定义域名计划为 `zhaoyanphd.com`，解析与绑定步骤见 [域名配置](docs/DOMAIN.md)。域名准备完成前使用上方 GitHub Pages 地址。
+自定义域名为 `zhaoyanphd.com`，解析与绑定说明见 [域名配置](docs/DOMAIN.md)。
 
 ## 内容与技术说明
 

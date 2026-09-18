@@ -1,10 +1,10 @@
 # 将 zhaoyanphd.com 关联到主页
 
-初始发布地址为 https://uestczhaoyan-gif.github.io/ 。以下是后续域名切换步骤，准备此文档不表示已改动 DNS。
+主域名为 https://zhaoyanphd.com/ ，初始发布地址为 https://uestczhaoyan-gif.github.io/ 。2026-09-18 已在阿里云配置下方解析，并在 GitHub Pages 设置主域名。以下保留配置步骤供日后维护。
 
 ## 顺序
 
-1. 在 GitHub 个人 Settings → Pages 中添加并验证 `zhaoyanphd.com`，按页面给出的值在 DNS 服务添加 TXT 记录。验证码必须使用该账号实际生成的值。
+1. 可在 GitHub 个人 Settings → Pages 中进一步验证 `zhaoyanphd.com`，按页面给出的值在 DNS 服务添加 TXT 记录。账号级 TXT 验证尚未配置；验证码必须使用该账号实际生成的值。
 2. 在主页仓库 Settings → Pages 的 Custom domain 填入 `zhaoyanphd.com`。
 3. 在域名实际使用的 DNS 服务添加以下记录（若 DNS 托管在阿里云，则进入该域名的解析设置）。
 
