@@ -11,7 +11,9 @@
     "art": "network",
     "repository": "https://github.com/uestczhaoyan-gif/Boundary-Measurements-for-Internal-Resistor-Recovery",
     "body": "projects/boundary-recovery.md",
-    "relatedPosts": ["undergraduate-research-retrospective"],
+    "relatedPosts": [
+      "undergraduate-research-retrospective"
+    ],
     "sourceChecked": "2026-09-18"
   },
   {
@@ -66,12 +68,14 @@
     "englishTitle": "Zhao Yan · Personal Website",
     "category": "工具与网站",
     "summary": "一个持续更新的个人空间：整理项目、记录学习与复盘，也为灵光一现的想法留一个位置。",
-    "tools": "JavaScript · Markdown · GitHub Pages",
-    "updated": "2026-09-18",
+    "tools": "JavaScript · Markdown · Cloudflare Pages",
+    "updated": "2026-09-20",
     "status": "持续建设",
     "art": "website",
     "repository": "https://github.com/uestczhaoyan-gif/uestczhaoyan-gif.github.io",
     "body": "projects/personal-website.md",
-    "relatedPosts": []
+    "relatedPosts": [
+      "personal-website-build-and-migration"
+    ]
   }
 ]

@@ -8,6 +8,22 @@
     "updated": "2026-09-18",
     "summary": "从课题启动、实验推进到论文写作，回看本科毕设中暴露的问题与逐渐建立的工作方法。",
     "body": "posts/undergraduate-research-retrospective.md",
-    "relatedProjects": ["boundary-recovery"]
+    "relatedProjects": [
+      "boundary-recovery"
+    ]
+  },
+  {
+    "id": "personal-website-build-and-migration",
+    "title": "从个人主页到持续写作空间：建站、HTTPS 排查与 Cloudflare 迁移记录",
+    "author": "GPT‑6 Astra（总结）",
+    "category": "实践记录",
+    "topic": "个人网站与持续写作",
+    "published": "2026-09-20",
+    "updated": "2026-09-20",
+    "summary": "由 GPT‑6 Astra 总结：记录网站架构、构建与 HTTPS 排查、Cloudflare 迁移，以及今后更新博客、项目和个人资料的步骤。",
+    "body": "posts/personal-website-build-and-migration.md",
+    "relatedProjects": [
+      "personal-website"
+    ]
   }
 ]
