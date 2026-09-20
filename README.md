@@ -34,7 +34,7 @@ node server.mjs
 
 ## 发布
 
-仓库使用 GitHub Actions 构建、检查并部署 GitHub Pages。推送到 `main` 会触发发布；拉取请求只检查，不部署。Pages 的发布来源应设为 GitHub Actions。
+正式站点由 Cloudflare Pages 托管，连接本仓库的 `main` 分支自动发布。构建命令为 `node build.mjs && node check.mjs`，输出目录为 `dist`，环境变量 `NODE_VERSION=24`。GitHub Actions 仍检查并发布 GitHub Pages 备用站点。
 
 自定义域名为 `zhaoyanphd.com`，解析与绑定说明见 [域名配置](docs/DOMAIN.md)。
 
@@ -45,3 +45,7 @@ node server.mjs
 - 尚未提供照片时显示姓名字母图案；不使用他人照片。
 - Markdown 渲染器为本地收录的 marked 17.0.5，保留 [上游许可证](vendor/marked.LICENSE.md)，无需 CDN。
 - 博客、个人资料及图片的内容权利归各自权利人；依赖按其原许可证使用。
+
+## 建站记录
+
+[建站、HTTPS 排查与 Cloudflare 迁移记录](content/posts/personal-website-build-and-migration.md)（由 GPT‑6 Astra 总结），同时发布在网站博客的“实践记录”分类。

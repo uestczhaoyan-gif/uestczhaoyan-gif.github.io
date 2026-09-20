@@ -12,6 +12,6 @@
 
 ## 如何维护
 
-个人资料与条目索引存放在 JSON 文件中，博客与项目正文使用 Markdown。Node.js 构建脚本生成静态页面，GitHub Actions 负责检查并发布到 GitHub Pages。
+个人资料与条目索引存放在 JSON 文件中，博客与项目正文使用 Markdown。Node.js 构建脚本生成静态页面，Cloudflare Pages 在 GitHub main 分支更新后自动检查并发布正式站点；GitHub Actions 保留 GitHub Pages 备用发布。
 
 将内容与页面模板分开，目的是让日常更新集中在写作本身。精选条目可直接调整，文章与项目可以相互链接。

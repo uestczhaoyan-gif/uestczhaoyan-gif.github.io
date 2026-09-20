@@ -48,6 +48,10 @@ node build.mjs
 node check.mjs
 ```
 
-检查通过后提交并推送到 `main`。GitHub 的 Actions 页面会显示构建与部署结果。`dist/` 不提交，Actions 自动生成发布文件。
+检查通过后提交并推送到 `main`。Cloudflare Pages 的 `zhaoyanphd` 项目会自动构建并发布正式站点；到 Cloudflare 的 Deployments 查看发布结果。GitHub Actions 继续检查和发布备用站点。`dist/` 不提交，由平台自动生成。
 
 第一次操作 Git 时可先用 GitHub 网页编辑少量文本；网页提交同样触发发布。涉及版式或较多内容时先本地预览。
+
+## 文章署名与建站记录
+
+文章索引可选填 `author`；不填时显示赵岩。AI 总结的文章应填写明确署名，并在正文说明来源。完整建站经过见 [建站与迁移记录](../content/posts/personal-website-build-and-migration.md)。域名与证书设置见 [域名维护](DOMAIN.md)。
