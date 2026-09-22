@@ -25,5 +25,16 @@
     "relatedProjects": [
       "personal-website"
     ]
+  },
+  {
+    "id": "stoic-reflections-early-phd",
+    "title": "基于斯多葛主义的博士初期人生思考",
+    "category": "思考随笔",
+    "topic": "自我成长与职业思考",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "summary": "从选择后的懊悔、计划与行动的落差出发，借助斯多葛主义重新思考博士初期的自我成长与职业方向。",
+    "body": "posts/stoic-reflections-early-phd.md",
+    "relatedProjects": []
   }
 ]

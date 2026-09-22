@@ -23,7 +23,7 @@
       "category": "奖学金",
       "items": [
         "校级优秀学生奖学金（三个年度）",
-        "康维雅奖学金"
+        "“康维娅”光电菁英奖学金"
       ]
     },
     {
@@ -54,7 +54,8 @@
   ],
   "featuredPosts": [
     "undergraduate-research-retrospective",
-    "personal-website-build-and-migration"
+    "personal-website-build-and-migration",
+    "stoic-reflections-early-phd"
   ],
   "projectCategories": [
     "研究与实验",
@@ -66,5 +67,12 @@
     "实践记录",
     "项目复盘",
     "思考随笔"
+  ],
+  "experience": [
+    {
+      "period": "2026.07.15–2026.07.30",
+      "organization": "山西省永和县政务大厅教体局窗口",
+      "role": "助学贷款合同工实习"
+    }
   ]
 }
