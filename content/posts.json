@@ -12,7 +12,7 @@
       "boundary-recovery"
     ],
     "authors": [
-      "赵岩",
+      "ZhaoYan",
       "DeepSeek"
     ]
   },
@@ -30,7 +30,7 @@
     ],
     "authors": [
       "GPT-6 Astra",
-      "ZY"
+      "ZhaoYan"
     ]
   },
   {
@@ -44,7 +44,7 @@
     "body": "posts/stoic-reflections-early-phd.md",
     "relatedProjects": [],
     "authors": [
-      "赵岩",
+      "ZhaoYan",
       "Gemini 3.1 Pro"
     ]
   }
