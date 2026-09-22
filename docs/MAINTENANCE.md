@@ -54,4 +54,4 @@ node check.mjs
 
 ## 文章署名与建站记录
 
-文章索引可选填 `author`；不填时显示赵岩。AI 总结的文章应填写明确署名，并在正文说明来源。完整建站经过见 [建站与迁移记录](../content/posts/personal-website-build-and-migration.md)。域名与证书设置见 [域名维护](DOMAIN.md)。
+文章索引可选填 `authors` 数组，例如 `["赵岩", "DeepSeek"]`，按第一作者、第二作者的顺序展示；不填时显示赵岩，也兼容旧 `author` 字段。AI 总结的文章应明确署名，并在正文说明来源。完整建站经过见 [建站与迁移记录](../content/posts/personal-website-build-and-migration.md)。域名与证书设置见 [域名维护](DOMAIN.md)。
