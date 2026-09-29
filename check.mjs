@@ -8,7 +8,8 @@ for(const file of pages){
  const html=fs.readFileSync(file,'utf8');
  for(const [,url] of html.matchAll(/(?:href|src)="([^"]+)"/g)){
   if(/^(data:|https?:|mailto:)/.test(url))continue;
-  const [relative,fragment]=url.split('#');
+  const [pathAndQuery,fragment]=url.split('#');
+  const relative=pathAndQuery.split('?')[0];
   const target=relative?(relative.startsWith('/')?path.resolve(root,'.'+relative):path.resolve(path.dirname(file),relative)):file;
   if(!fs.existsSync(target))throw new Error(`Missing link: ${file} -> ${url}`);
   if(fragment&&!fs.readFileSync(target,'utf8').includes(`id="${fragment}"`))throw new Error(`Missing anchor: ${url}`);

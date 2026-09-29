@@ -14,6 +14,10 @@
     "authors": [
       "ZhaoYan",
       "DeepSeek"
+    ],
+    "tags": [
+      "科研方法",
+      "个人成长"
     ]
   },
   {
@@ -31,6 +35,9 @@
     "authors": [
       "GPT-6 Astra",
       "ZhaoYan"
+    ],
+    "tags": [
+      "网站建设"
     ]
   },
   {
@@ -46,6 +53,28 @@
     "authors": [
       "ZhaoYan",
       "Gemini 3.1 Pro"
+    ],
+    "tags": [
+      "个人成长",
+      "职业思考"
     ]
+  },
+  {
+    "id": "laboratory-instrument-notes",
+    "title": "实验室操作记录：宽谱激光器、光功率计与源表",
+    "category": "实践记录",
+    "topic": "实验仪器使用",
+    "published": "2026-09-29",
+    "updated": "2026-09-29",
+    "summary": "从实验室基础规则到宽谱激光器、光功率计和源表的使用记录，保留现场图示、待核实问题与后续补充入口。",
+    "body": "posts/laboratory-instrument-notes.md",
+    "authors": [
+      "ZhaoYan"
+    ],
+    "tags": [
+      "实验仪器",
+      "实验操作"
+    ],
+    "relatedProjects": []
   }
 ]
