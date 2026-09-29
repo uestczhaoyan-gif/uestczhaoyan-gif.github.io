@@ -56,8 +56,8 @@ node check.mjs
 
 文章索引可选填 `authors` 数组，例如 `["赵岩", "DeepSeek"]`，按第一作者、第二作者的顺序展示；不填时显示赵岩，也兼容旧 `author` 字段。AI 总结的文章应明确署名，并在正文说明来源。完整建站经过见 [建站与迁移记录](../content/posts/personal-website-build-and-migration.md)。域名与证书设置见 [域名维护](DOMAIN.md)。
 
-## 博客标签与实验记录
+## 博客分类与实验记录
 
-博客索引 `content/posts.json` 的每篇文章可填写 `tags` 数组，例如 `"tags": ["实验仪器", "实验操作"]`。一篇文章可有多个标签。顶部标签栏自动汇总文章标签；`content/site.json` 的 `postTags` 可固定显示顺序或预留标签。尚无文章的标签显示 0，点击会显示暂无文章。类别和标签共同筛选；选“全部”和“全部标签”恢复所有文章。文章页的标签链接可直接跳回对应的筛选结果。
+博客索引 `content/posts.json` 中每篇文章通过 `category` 归类，例如“实践记录”“项目复盘”“思考随笔”。使用 `content/site.json` 的 `postCategories` 中已有的类别；博客顶部按类别筛选，点击“全部”恢复全部文章。无需另外维护标签。
 
 实验记录正文位于 `content/posts/laboratory-instrument-notes.md`，配图放在 `assets/posts/laboratory-instrument-notes/`。后续在原文对应仪器章节补充步骤、参数和新图，并同步修改索引的 `updated` 日期；新增仪器可沿用文末模板。公开资料不要包含电脑密码、账号凭据等内容。原始 PPT 保留在本地，未上传到公开仓库。

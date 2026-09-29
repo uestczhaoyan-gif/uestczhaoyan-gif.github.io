@@ -14,10 +14,6 @@
     "authors": [
       "ZhaoYan",
       "DeepSeek"
-    ],
-    "tags": [
-      "科研方法",
-      "个人成长"
     ]
   },
   {
@@ -35,9 +31,6 @@
     "authors": [
       "GPT-6 Astra",
       "ZhaoYan"
-    ],
-    "tags": [
-      "网站建设"
     ]
   },
   {
@@ -53,10 +46,6 @@
     "authors": [
       "ZhaoYan",
       "Gemini 3.1 Pro"
-    ],
-    "tags": [
-      "个人成长",
-      "职业思考"
     ]
   },
   {
@@ -70,10 +59,6 @@
     "body": "posts/laboratory-instrument-notes.md",
     "authors": [
       "ZhaoYan"
-    ],
-    "tags": [
-      "实验仪器",
-      "实验操作"
     ],
     "relatedProjects": []
   }

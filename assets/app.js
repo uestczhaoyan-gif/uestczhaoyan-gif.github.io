@@ -5,35 +5,16 @@ document.querySelectorAll('[data-showcase]').forEach(section=>{
   }));
 });
 const categoryButtons=[...document.querySelectorAll('[data-filter]')];
-const tagButtons=[...document.querySelectorAll('[data-tag]')];
-let selectedCategory='all';
-let selectedTag=new URLSearchParams(location.search).get('tag') || '';
-if(!tagButtons.some(button=>button.dataset.tag===selectedTag))selectedTag='';
-function applyFilters(){
-  categoryButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===selectedCategory)));
-  tagButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.tag===selectedTag)));
-  let visibleCount=0;
+categoryButtons.forEach(button=>button.addEventListener('click',()=>{
+  categoryButtons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+  let count=0;
   document.querySelectorAll('[data-category]').forEach(group=>{
-    const categoryMatches=selectedCategory==='all'||group.dataset.category===selectedCategory;
-    const posts=[...group.querySelectorAll('[data-post-tags]')];
-    posts.forEach(post=>post.hidden=!!selectedTag&&!JSON.parse(post.dataset.postTags).includes(selectedTag));
-    const count=posts.length?posts.filter(post=>!post.hidden).length:group.querySelectorAll('.project-card').length;
-    group.hidden=!categoryMatches||count===0;
-    if(!group.hidden)visibleCount+=count;
-    const countLabel=group.querySelector('.category-title>span');
-    if(countLabel)countLabel.textContent=String(count).padStart(2,'0');
+    group.hidden=button.dataset.filter!=='all'&&group.dataset.category!==button.dataset.filter;
+    if(!group.hidden)count+=group.querySelectorAll('.post-row,.project-card').length;
   });
-  const empty=document.querySelector('.filter-empty');if(empty)empty.hidden=visibleCount>0;
   const status=document.querySelector('.filter-status');
-  if(status)status.textContent=`当前分类：${selectedCategory==='all'?'全部':selectedCategory}；标签：${selectedTag||'全部'}；共 ${visibleCount} 篇`;
-}
-categoryButtons.forEach(button=>button.addEventListener('click',()=>{selectedCategory=button.dataset.filter;applyFilters()}));
-tagButtons.forEach(button=>button.addEventListener('click',()=>{
-  selectedTag=button.dataset.tag;
-  const url=new URL(location.href);if(selectedTag)url.searchParams.set('tag',selectedTag);else url.searchParams.delete('tag');
-  history.replaceState(null,'',url);applyFilters();
+  if(status)status.textContent=`当前分类：${button.dataset.filter==='all'?'全部':button.dataset.filter}；共 ${count} 项`;
 }));
-if(categoryButtons.length||tagButtons.length)applyFilters();
 const themeButton=document.querySelector('.theme');
 let savedTheme;try{savedTheme=localStorage.getItem('zy-theme')}catch{}
 if(savedTheme==='dark')document.documentElement.dataset.theme='dark';
