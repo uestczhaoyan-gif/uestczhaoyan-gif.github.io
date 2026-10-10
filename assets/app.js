@@ -33,3 +33,19 @@ document.addEventListener('click',event=>{
 document.addEventListener('keydown',event=>{
   if(event.key==='Escape')document.querySelectorAll('.contact-detail[open]').forEach(item=>{item.open=false;item.querySelector('summary').focus()});
 });
+
+// Display the optional nickname only when the whole contact row fits.
+const contactArea=document.querySelector('.contact-area');
+const contactNickname=document.querySelector('.contact-nickname');
+function fitContactNickname(){
+  if(!contactArea||!contactNickname)return;
+  contactNickname.hidden=false;
+  const entries=contactArea.querySelectorAll('.socials>a,.contact-nickname,.social-platforms>a,.contact-detail>summary,.contact-note');
+  const centers=[...entries].map(item=>{const rect=item.getBoundingClientRect();return rect.top+rect.height/2});
+  contactNickname.hidden=Math.max(...centers)-Math.min(...centers)>12;
+}
+if(contactNickname){
+  fitContactNickname();
+  document.fonts?.ready.then(fitContactNickname);
+  window.addEventListener('resize',fitContactNickname);
+}

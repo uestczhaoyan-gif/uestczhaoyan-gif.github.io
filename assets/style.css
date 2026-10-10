@@ -92,3 +92,5 @@ main>.home-section:last-child{margin-bottom:55px}
 /* Keep all contact entries in one flowing row whenever space permits. */
 .contact-area{position:relative;align-items:center;gap:6px 18px}.intro-live .contact-area .socials,.social-contact,.social-platforms{display:contents}.contact-area>.socials>a{font-size:13px;white-space:nowrap}.contact-note{margin:0 0 0 6px;font-size:11px}.social-platforms>a,.contact-detail>summary{white-space:nowrap}.social-symbol svg{display:block}
 @media(max-width:700px){.contact-area{display:flex;gap:4px 14px}.contact-note{margin:2px 0 0;flex-basis:100%}.contact-panel{top:100%;margin-top:5px}}
+
+.contact-area{column-gap:12px}.contact-nickname{font-size:12px;white-space:nowrap}.contact-nickname small{font-size:10px;color:var(--muted)}
