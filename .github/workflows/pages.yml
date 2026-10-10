@@ -14,12 +14,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
       - name: Build static website
         run: node build.mjs
       - name: Check links and content
+        env:
+          REVIEW_BASE: ${{ github.event.before || github.event.pull_request.base.sha }}
         run: node check.mjs
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'

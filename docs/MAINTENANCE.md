@@ -61,3 +61,16 @@ node check.mjs
 博客索引 `content/posts.json` 中每篇文章通过 `category` 归类，例如“实践记录”“项目复盘”“思考随笔”。使用 `content/site.json` 的 `postCategories` 中已有的类别；博客顶部按类别筛选，点击“全部”恢复全部文章。无需另外维护标签。
 
 实验记录正文位于 `content/posts/laboratory-instrument-notes.md`，配图放在 `assets/posts/laboratory-instrument-notes/`。后续在原文对应仪器章节补充步骤、参数和新图，并同步修改索引的 `updated` 日期；新增仪器可沿用文末模板。公开资料不要包含电脑密码、账号凭据等内容。原始 PPT 保留在本地，未上传到公开仓库。
+
+## 每次发布的关联信息复核（2026-10-10）
+
+`node check.mjs` 会自动执行 `review-updates.mjs`：项目与博客双向关联缺失时阻止发布；按改动文件输出需要人工复核的标题、摘要、正文、日期、项目来源、首页展示与维护文档。GitHub Actions 同时把清单写入运行摘要，Cloudflare 构建日志中也可查看。
+
+默认比较上一提交与当前工作区，包含未提交和新增文件；批量提交时可以设置 `REVIEW_BASE` 为更新前的提交。没有可用 Git 历史时输出完整复核清单。关联提示不会自动修改正文，也不等于内容已核实。
+
+- 更新项目后检查仓库与在线页面，同步 `projects.json` 的摘要、状态、网址和 Markdown 详情；`sourceChecked` 是实际核对日期，`sourceRevision` 可记录依据的提交。
+- 新增博客后判断是否关联已有项目，并同步两侧 `relatedProjects` / `relatedPosts`；检查首页精选是否仍合适。
+- 改变部署、更新方式或隐私处理后检查 README、维护说明和建站博客，历史文章用日期补记。
+- 只更新外部项目仓库，不会触发本主页的检查。项目完成一个版本后，需要在这里复核介绍；此机制没有后台定时监控，也不自动复制外部 README。
+
+发布前处理清单中的相关项；发布后确认实际网页。卡片与总览共用 JSON 数据，无需手工重复修改生成的 HTML。

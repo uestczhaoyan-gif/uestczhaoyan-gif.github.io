@@ -36,16 +36,17 @@
     "title": "光研导航",
     "englishTitle": "Optics Scholar Hub",
     "category": "工具与网站",
-    "summary": "为光学研究生整理期刊、会议与投稿信息，让检索、筛选和截止时间查询更方便。",
+    "summary": "面向光学及交叉方向的期刊与会议导航，支持组合筛选、期刊对比、会议往届查询与投稿信息核对。",
     "tools": "TypeScript · React · 开源网站",
     "updated": "2026-10-10",
-    "status": "已上线 · 持续维护",
+    "status": "V1.0 已完成 · 持续维护",
     "art": "catalog",
     "repository": "https://github.com/uestczhaoyan-gif/optics-scholar-hub",
     "website": "https://uestczhaoyan-gif.github.io/optics-scholar-hub/",
     "body": "projects/optics-scholar-hub.md",
     "relatedPosts": [],
-    "sourceChecked": "2026-10-10"
+    "sourceChecked": "2026-10-10",
+    "sourceRevision": "be57eec3432a86601a95494dcb17d3c613223535"
   },
   {
     "id": "persona-distillery",

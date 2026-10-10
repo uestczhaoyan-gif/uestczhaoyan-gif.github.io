@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import './review-updates.mjs';
 const root=path.resolve('dist');
 function files(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(x=>x.isDirectory()?files(path.join(dir,x.name)):[path.join(dir,x.name)]);}
 const pages=files(root).filter(x=>x.endsWith('.html'));

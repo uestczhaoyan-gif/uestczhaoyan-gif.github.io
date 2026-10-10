@@ -49,3 +49,5 @@ node server.mjs
 ## 建站记录
 
 [建站、HTTPS 排查与 Cloudflare 迁移记录](content/posts/personal-website-build-and-migration.md)（由 GPT‑6 Astra 总结），同时发布在网站博客的“实践记录”分类。
+
+每次发布还会检查项目与博客的双向关联，并输出关联内容复核清单；见[维护说明](docs/MAINTENANCE.md)。自动检查不替代对外部项目功能的人工核对。

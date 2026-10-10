@@ -22,7 +22,7 @@
     "category": "实践记录",
     "topic": "个人网站与持续写作",
     "published": "2026-09-20",
-    "updated": "2026-09-22",
+    "updated": "2026-10-10",
     "summary": "由 GPT‑6 Astra 总结：记录网站架构、构建与 HTTPS 排查、Cloudflare 迁移，以及今后更新博客、项目和个人资料的步骤。",
     "body": "posts/personal-website-build-and-migration.md",
     "relatedProjects": [
