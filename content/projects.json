@@ -38,14 +38,14 @@
     "category": "工具与网站",
     "summary": "为光学研究生整理期刊、会议与投稿信息，让检索、筛选和截止时间查询更方便。",
     "tools": "TypeScript · React · 开源网站",
-    "updated": "2026-09-15",
+    "updated": "2026-10-10",
     "status": "已上线 · 持续维护",
     "art": "catalog",
     "repository": "https://github.com/uestczhaoyan-gif/optics-scholar-hub",
     "website": "https://uestczhaoyan-gif.github.io/optics-scholar-hub/",
     "body": "projects/optics-scholar-hub.md",
     "relatedPosts": [],
-    "sourceChecked": "2026-09-18"
+    "sourceChecked": "2026-10-10"
   },
   {
     "id": "persona-distillery",

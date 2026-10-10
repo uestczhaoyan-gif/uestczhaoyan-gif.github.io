@@ -81,3 +81,6 @@ main>.home-section:last-child{margin-bottom:55px}
 .markdown-body .lab-template{margin:24px 0;border-block:1px solid var(--line);padding:16px 0}
 .markdown-body .lab-template summary{cursor:pointer;font-weight:500;color:var(--accent)}
 .markdown-body .lab-template pre{margin-bottom:0}
+
+/* Direct website access alongside project details. */
+.project-entry{min-width:0;display:flex;flex-direction:column}.project-entry>.project-card{flex:1}.project-entry-links{padding:10px 2px 0;font-size:13px;color:var(--accent)}.project-entry-links a:hover{text-decoration:underline}
