@@ -87,7 +87,7 @@ ${file === '404.html' ? '<meta name="robots" content="noindex">' : `<link rel="c
 }
 function projectCard(item, prefix = '') {
   const card = `<a class="project-card" href="${prefix}projects/${item.id}/index.html"><div class="project-art">${art(item.art)}</div><div class="card-body"><span class="eyebrow">${esc(item.category)}</span><h3>${esc(item.title)}<span class="arrow" aria-hidden="true">↗</span></h3><p>${esc(item.summary)}</p><span class="tools">${esc(item.tools)}</span></div></a>`;
-  return `<div class="project-entry">${card}${item.website ? `<div class="project-entry-links">${external(item.website, '在线使用 ↗')}</div>` : ''}</div>`;
+  return `<div class="project-entry">${card}${item.website && prefix ? `<div class="project-entry-links">${external(item.website, '在线使用 ↗')}</div>` : ''}</div>`;
 }
 function postRow(item, prefix = '') {
   return `<a class="post-row" href="${prefix}blog/${item.id}/index.html"><div><span class="eyebrow">${esc(item.category)}<span class="muted"> / ${esc(item.topic)}</span></span><h3>${esc(item.title)}</h3><p>${esc(item.summary)}</p></div><span class="post-meta">${esc(item.read)}<span aria-hidden="true">↗</span></span></a>`;
