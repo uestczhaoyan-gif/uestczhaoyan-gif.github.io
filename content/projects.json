@@ -44,7 +44,9 @@
     "repository": "https://github.com/uestczhaoyan-gif/optics-scholar-hub",
     "website": "https://uestczhaoyan-gif.github.io/optics-scholar-hub/",
     "body": "projects/optics-scholar-hub.md",
-    "relatedPosts": [],
+    "relatedPosts": [
+      "optics-scholar-hub-retrospective"
+    ],
     "sourceChecked": "2026-10-10",
     "sourceRevision": "be57eec3432a86601a95494dcb17d3c613223535"
   },
