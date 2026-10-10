@@ -9,7 +9,7 @@
     "summary": "沿着光研导航从资料汇总到版本验收的过程，回看数据可信度、检索与对比体验、维护流程中的具体问题，以及 AI 协作的取舍。",
     "body": "posts/optics-scholar-hub-retrospective.md",
     "authors": [
-      "GPT-6",
+      "GPT-6 Astra",
       "ZhaoYan"
     ],
     "relatedProjects": [
