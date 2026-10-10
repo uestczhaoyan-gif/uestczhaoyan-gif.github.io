@@ -58,7 +58,7 @@ node check.mjs
 
 ## 博客分类与实验记录
 
-博客索引 `content/posts.json` 中每篇文章通过 `category` 归类，分为“项目实践”（项目开发与建设复盘）、“成长与思考”（个人经历复盘与想法）、“实验记录”（仪器操作与实验过程）、“知识笔记”（概念、原理与知识梳理）。使用 `content/site.json` 的 `postCategories` 中已有的类别；博客顶部按类别筛选，点击“全部”恢复全部文章。无需另外维护标签。
+博客索引 `content/posts.json` 中每篇文章通过 `category` 归类，分为“项目实践”（项目开发与建设复盘）、“成长随笔”（个人经历复盘与想法）、“实验记录”（仪器操作与实验过程）、“知识笔记”（概念、原理与知识梳理）。使用 `content/site.json` 的 `postCategories` 中已有的类别；博客顶部按类别筛选，点击“全部”恢复全部文章。无需另外维护标签。
 
 实验记录正文位于 `content/posts/laboratory-instrument-notes.md`，配图放在 `assets/posts/laboratory-instrument-notes/`。后续在原文对应仪器章节补充步骤、参数和新图，并同步修改索引的 `updated` 日期；新增仪器可沿用文末模板。公开资料不要包含电脑密码、账号凭据等内容。原始 PPT 保留在本地，未上传到公开仓库。
 
