@@ -2,7 +2,7 @@
   {
     "id": "optics-scholar-hub-retrospective",
     "title": "从资料汇总到可维护的科研工具：光研导航开发复盘",
-    "category": "项目复盘",
+    "category": "项目实践",
     "topic": "科研工具与 AI 协作",
     "published": "2026-10-10",
     "updated": "2026-10-10",
@@ -19,7 +19,7 @@
   {
     "id": "undergraduate-research-retrospective",
     "title": "本科毕业设计复盘：项目推进中的方法与教训",
-    "category": "项目复盘",
+    "category": "成长与思考",
     "topic": "科研方法与成长",
     "published": "2026-09-18",
     "updated": "2026-09-22",
@@ -36,7 +36,7 @@
   {
     "id": "personal-website-build-and-migration",
     "title": "从个人主页到持续写作空间：建站、HTTPS 排查与 Cloudflare 迁移记录",
-    "category": "实践记录",
+    "category": "项目实践",
     "topic": "个人网站与持续写作",
     "published": "2026-09-20",
     "updated": "2026-10-10",
@@ -53,7 +53,7 @@
   {
     "id": "stoic-reflections-early-phd",
     "title": "基于斯多葛主义的博士初期人生思考",
-    "category": "思考随笔",
+    "category": "成长与思考",
     "topic": "自我成长与职业思考",
     "published": "2026-09-22",
     "updated": "2026-09-22",
@@ -68,7 +68,7 @@
   {
     "id": "laboratory-instrument-notes",
     "title": "实验室操作记录：宽谱激光器、光功率计与源表",
-    "category": "实践记录",
+    "category": "实验记录",
     "topic": "实验仪器使用",
     "published": "2026-09-29",
     "updated": "2026-09-29",
