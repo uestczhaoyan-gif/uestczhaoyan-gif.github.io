@@ -178,7 +178,23 @@ uv run python -m jevforge.train `
 
 监督训练完，我接着跑了 RLCD 后训练模块。配置记的是 **`mode=exact`**，跑了 200 步，最优检查点就是第 200 步。这个模式会直接算候选分布下的效用目标，再结合 Brier 项和对监督模型的 KL 约束。
 
-用一个例子说明训练循环（`exact` 模式）：
+先用一个采样式例子直观说明 RLCD 的训练循环：
+
+```text
+for step in 1..200:
+    for question in batch(6 个问题):
+        1. 采样 8 个决策
+        2. 算 utility 和 calibration → reward
+        3. 组内归一化 → advantage
+        4. 策略梯度更新决策头
+        5. 加 KL 约束
+    每 50 步：在 300 题 dev 集上评估 → 记录 ce/brier/utility/kl/top1
+200 步后：拟合温度 → 在 test/ood 全量评估
+```
+
+上面是帮助理解采样、反馈和更新关系的简化示意。对照本地 JevForge 的 `sampled` 实现，采样 reward 来自 utility，advantage 通过减去组内平均 reward 得到；Brier 校准项和 KL 项另行加入总损失，更新范围包括底座和决策头。
+
+**如果使用 exact 模式**，就直接对候选分布求期望，不需要“采样 8 个决策 → 计算 advantage”这一步。我这次实际运行的是这个模式，流程如下：
 
 ```text
 for step in 1..200:
