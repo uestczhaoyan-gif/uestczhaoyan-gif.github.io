@@ -302,8 +302,7 @@ $jevResponse = Invoke-RestMethod `
 $jevResponse | ConvertTo-Json -Depth 10
 $jevResponse.answers.action.choice
 $jevResponse.answers.action.probabilities
-$jevResponse.answers.is_target.answer
-$jevResponse.answers.is_target.probability
+$jevResponse.answers.is_target.noul
 ```
 
 这个请求用于验证服务调用路径，不是中文业务能力测试。网页决策数据上的提升，也不能直接替代工单分流或光学领域任务的评估。后续接入自己的 Agent 时，需要用实际任务的数据重新检查效果。
