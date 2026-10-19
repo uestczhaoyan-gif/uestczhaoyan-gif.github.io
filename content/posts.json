@@ -1,5 +1,21 @@
 [
   {
+    "id": "jev-training-from-zero-to-one",
+    "title": "Jev 训练从零到一：在 RTX 3050 上完成微调、校准与本地部署",
+    "category": "项目实践",
+    "topic": "模型训练与概率校准",
+    "published": "2026-10-19",
+    "updated": "2026-10-19",
+    "summary": "记录在 NVIDIA GeForce RTX 3050 上使用 JevForge 完成数据构建、监督微调、RLCD 后训练和本地部署的过程，结合保存的配置与报告分析结果和踩坑经验。",
+    "authors": [
+      "ZhaoYan",
+      "DeepseekV4.1f",
+      "GPT-6Astra"
+    ],
+    "body": "posts/jev-training-from-zero-to-one.md",
+    "relatedProjects": []
+  },
+  {
     "id": "optics-scholar-hub-retrospective",
     "title": "从资料汇总到可维护的科研工具：光研导航开发复盘",
     "category": "项目实践",
