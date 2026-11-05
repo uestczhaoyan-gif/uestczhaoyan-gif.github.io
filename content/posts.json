@@ -1,5 +1,21 @@
 [
   {
+    "id": "optical-path-alignment-sop",
+    "title": "光路搭建 SOP：双镜走光束与笼式系统对准",
+    "category": "实验记录",
+    "topic": "光路搭建与对准",
+    "published": "2026-11-05",
+    "updated": "2026-11-05",
+    "summary": "从第一次搭建扫描光路时的疑问出发，整理双反射镜与近远光阑的对准原理、笼式系统搭建步骤，以及透镜、样品台和探测端的验收方法。",
+    "authors": [
+      "ZhaoYan",
+      "Gemini 4 Argon",
+      "GPT-6.1 Sol"
+    ],
+    "body": "posts/optical-path-alignment-sop.md",
+    "relatedProjects": []
+  },
+  {
     "id": "jev-training-from-zero-to-one",
     "title": "Jev 训练从零到一：在 RTX 3050 上完成微调、校准与本地部署",
     "category": "项目实践",
