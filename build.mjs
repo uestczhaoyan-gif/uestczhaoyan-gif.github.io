@@ -5,6 +5,7 @@ const assetVersion = file => createHash('sha256').update(fs.readFileSync(file)).
 const cssVersion = assetVersion('assets/style.css'), jsVersion = assetVersion('assets/app.js');
 import { Marked } from './vendor/marked.esm.js';
 import { art } from './templates/art.mjs';
+import { mathExtensions } from './templates/math.mjs';
 
 const root = process.cwd();
 const output = path.resolve(root, 'dist');
@@ -42,7 +43,7 @@ function markdown(file) {
   assert(sourcePath.startsWith(contentRoot + path.sep), 'Content path escapes content directory');
   const body = fs.readFileSync(sourcePath, 'utf8').replace(/^# [^\n]+\n+/, '');
   const toc = [];
-  const parser = new Marked({ gfm: true, renderer: {
+  const parser = new Marked({ extensions: mathExtensions, gfm: true, renderer: {
     heading(token) {
       const id = `section-${toc.length + 1}`;
       toc.push({ id, depth: token.depth, title: token.text.replace(/[*_`]/g, '') });
@@ -84,7 +85,7 @@ function shell(title, active, body, file = 'index.html', description = site.purp
 ${file === '404.html' ? '<meta name="robots" content="noindex">' : `<link rel="canonical" href="${esc(canonical)}">`}
 <meta property="og:title" content="${esc(title)} · ${esc(site.name)}"><meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="${active === 'blog' && depth === 2 ? 'article' : 'website'}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:locale" content="zh_CN">
-<link rel="icon" type="image/svg+xml" href="${prefix}assets/favicon.svg"><link rel="stylesheet" href="${prefix}assets/style.css?v=${cssVersion}"><script src="${prefix}assets/app.js?v=${jsVersion}" defer></script></head>
+<link rel="icon" type="image/svg+xml" href="${prefix}assets/favicon.svg">${body.includes('class="katex') ? `<link rel="stylesheet" href="${prefix}assets/katex/katex.min.css?v=0.19.1">` : ''}<link rel="stylesheet" href="${prefix}assets/style.css?v=${cssVersion}"><script src="${prefix}assets/app.js?v=${jsVersion}" defer></script></head>
 <body><a class="skip" href="#main">跳转到正文</a><header><div class="nav-wrap"><a class="brand" href="${prefix}index.html">${esc(site.name)} <span class="brand-english">${esc(site.englishName)}</span></a><nav aria-label="主导航">${[['home', '首页', 'index.html'], ['projects', '项目', 'projects/index.html'], ['blog', '博客', 'blog/index.html']].map(([id, label, url]) => `<a href="${prefix}${url}" ${active === id ? 'aria-current="page"' : ''}>${label}</a>`).join('')}<button class="theme" aria-label="切换深色模式" title="切换配色">◐</button></nav></div></header>
 <main id="main">${body}</main><footer><span>© ${new Date().getFullYear()} ${esc(site.name)} <span class="footer-dot">·</span> 学习，探索，记录。</span>${external(site.repository, '本站源码')}</footer></body></html>`;
 }

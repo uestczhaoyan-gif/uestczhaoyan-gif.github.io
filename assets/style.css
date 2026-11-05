@@ -94,3 +94,7 @@ main>.home-section:last-child{margin-bottom:55px}
 @media(max-width:700px){.contact-area{display:flex;gap:4px 14px}.contact-note{margin:2px 0 0;flex-basis:100%}.contact-panel{top:100%;margin-top:5px}}
 
 .contact-area{column-gap:12px}.contact-nickname{font-size:12px;white-space:nowrap}.contact-nickname small{font-size:10px;color:var(--muted)}
+
+/* Mathematical notation is built into the HTML; fonts are served locally. */
+.markdown-body .katex{font-size:1.08em}
+.markdown-body .katex-display{overflow-x:auto;overflow-y:hidden;padding:8px 0}
