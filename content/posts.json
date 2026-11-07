@@ -1,5 +1,21 @@
 [
   {
+    "id": "singular-value-decomposition",
+    "title": "奇异值分解（SVD）",
+    "category": "知识笔记",
+    "topic": "线性代数与光电响应",
+    "published": "2026-11-07",
+    "updated": "2026-11-07",
+    "summary": "从光电探测器的响应矩阵出发，梳理奇异值分解的几何图像、输入输出模式，以及条件数和最小奇异值的含义。",
+    "authors": [
+      "Gemini 4 Argon",
+      "Zhao Yan",
+      "Deepseek V4.1flash1017"
+    ],
+    "body": "posts/singular-value-decomposition.md",
+    "relatedProjects": []
+  },
+  {
     "id": "optical-path-alignment-sop",
     "title": "光路搭建 SOP：双镜走光束与笼式系统对准",
     "category": "实验记录",
