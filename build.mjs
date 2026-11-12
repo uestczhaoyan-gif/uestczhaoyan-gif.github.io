@@ -121,8 +121,8 @@ function overview(type, title, english, description, items, categories, render) 
   const body = `<div class="breadcrumb"><a href="../index.html">首页</a><span>/</span>${title}</div><div class="page-heading"><span class="kicker">${english}</span><h1>${title}<span class="name-dot">.</span></h1><p>${description}</p></div>${available.length > 1 ? `<div class="filters" aria-label="按类别筛选"><button data-filter="all" aria-pressed="true">全部 <span>${items.length}</span></button>${available.map(category => `<button data-filter="${esc(category)}" aria-pressed="false">${esc(category)} <span>${items.filter(item => item.category === category).length}</span></button>`).join('')}</div>` : ''}<div class="category-groups">${available.map(category => `<section class="category-group" data-category="${esc(category)}"><div class="category-title"><h2>${esc(category)}</h2><span>${String(items.filter(item => item.category === category).length).padStart(2, '0')}</span></div><div class="${type === 'projects' ? 'overview-projects' : 'post-list'}">${items.filter(item => item.category === category).map(item => render(item, '../')).join('') || '<p class="muted">这个分类还没有文章，后续会逐步补充。</p>'}</div></section>`).join('') || '<p class="muted">内容正在整理中。</p>'}</div><p class="filter-status sr-only" aria-live="polite"></p>`;
   write(file, shell(title, type, body, file, description));
 }
-overview('projects', '项目', 'PROJECTS', '从研究与实验，到工具和兴趣探索。', projects, site.projectCategories, projectCard);
-overview('blog', '博客', 'BLOG', '把学到的知识写清楚，也为尚未解答的问题留一个位置。', posts, site.postCategories, postRow);
+overview('projects', '项目', 'PROJECTS', '围绕专业课题开展研究，在应用开发与兴趣探索中把想法做出来。', projects, site.projectCategories, projectCard);
+overview('blog', '博客', 'BLOG', '记录项目实践与实验过程，梳理知识，也写下成长中的思考。', posts, site.postCategories, postRow);
 const toc = entry => `<div class="toc"><span>本页目录</span>${entry.toc.map(h => `<a class="toc-depth-${h.depth}" href="#${h.id}">${esc(h.title)}</a>`).join('')}</div>`;
 for (const item of projects) {
   const file = `projects/${item.id}/index.html`;
