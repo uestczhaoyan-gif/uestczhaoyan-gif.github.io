@@ -1,5 +1,19 @@
 [
   {
+    "id": "klayout-tutorial",
+    "title": "KLayout 使用教程",
+    "category": "知识笔记",
+    "topic": "版图绘制与软件学习",
+    "published": "2026-11-13",
+    "updated": "2026-11-13",
+    "summary": "整理 KLayout 从安装与界面设置到基础绘图、Cell 与 PCell、布尔运算、测量、对齐、阵列和填充的常用操作。",
+    "authors": [
+      "ZhaoYan"
+    ],
+    "body": "posts/klayout-tutorial.md",
+    "relatedProjects": []
+  },
+  {
     "id": "singular-value-decomposition",
     "title": "奇异值分解（SVD）",
     "category": "知识笔记",
